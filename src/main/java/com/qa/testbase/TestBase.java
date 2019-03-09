@@ -8,7 +8,7 @@ import java.util.Properties;
 public class TestBase {
 
 	
-	Properties prop = null;
+	public Properties prop;
 	
 	private static TestBase testBaseObj = null;
 	
@@ -17,8 +17,6 @@ public class TestBase {
 		try {
 			FileInputStream fi = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/config/config.properties");
 			prop.load(fi);
-		}catch (FileNotFoundException e) {
-			e.printStackTrace();
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
