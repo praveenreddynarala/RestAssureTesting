@@ -1,13 +1,10 @@
 package com.qa.test;
 
-import com.qa.TestUtils.Util;
 import com.qa.restassureclient.RestAssureClientCall;
 import com.qa.testbase.TestBase;
-import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.ResponseBody;
 import org.testng.Assert;
-import org.testng.TestNGUtils;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
