@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RestAssureTest">
+
+    <test name="REST_Assure_Get_Call">
+        <classes>
+            <class name="com.qa.test.REST_Assure_Get_Call" />
+        </classes>
+    </test>
+
+</suite>
