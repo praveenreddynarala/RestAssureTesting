@@ -1,9 +1,13 @@
 package com.qa.test;
 
+import com.qa.TestUtils.Util;
 import com.qa.restassureclient.RestAssureClientCall;
 import com.qa.testbase.TestBase;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.response.ResponseBody;
 import org.testng.Assert;
+import org.testng.TestNGUtils;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,6 +18,7 @@ public class REST_Assure_Get_Call {
     private ResponseBody responseBody;
     private int sStatusCode;
     private String sStatusLine;
+    private Headers headers;
 
     @BeforeMethod
     public void setup(){
@@ -55,6 +60,21 @@ public class REST_Assure_Get_Call {
         sStatusLine = RestAssureClientCall.getInstance().getRESTAssureResponse(sURL, sCityName).getStatusLine();
         System.out.println("Response status line-->"+sStatusLine);
         Assert.assertEquals(sStatusLine, TestBase.getinstance().RESPONSE_STATUS_LINE, "Incorrect status line");
+    }
+
+    @Test
+    public void validate_get_all_headers(){
+        headers = RestAssureClientCall.getInstance().getRESTAssureResponse(sURL, sCityName).getHeaders();
+        headers.forEach((k)->System.out.println("Key: " + k.getName() + " -- Value: " + k.getValue()));
+    }
+
+    @Test
+    public void validate_response_headers_using_lamda_expression(){
+        headers = RestAssureClientCall.getInstance().getRESTAssureResponse(sURL, sCityName).getHeaders();
+        headers.forEach((k)-> {
+            if (k.getName().equals("Server"))
+                Assert.assertTrue(k.getValue().equals("application/json"), "Header doesn't exists");
+        });
     }
 
 }
