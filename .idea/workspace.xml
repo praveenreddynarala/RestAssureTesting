@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d77febe-f48a-4e31-9034-3147522edcab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/TestUtils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/TestUtils/Util.java" afterDir="false" />
+    <list default="true" id="8d77febe-f48a-4e31-9034-3147522edcab" name="Default Changelist" comment="Updated POM.xml file for JSONObject parsing&#10;Added Utility method to read JSONObject and parse data&#10;Added one new test case">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qa/test/REST_Assure_Get_Call.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qa/test/REST_Assure_Get_Call.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+            <state relative-caret-position="425">
+              <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,7 +224,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552985465609" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552986143426" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RestAssureAPITest" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -247,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)">
+  <component name="RunManager" selected="TestNG.REST_Assure_Get_Call.getResponseBody">
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-11.0.2" />
@@ -303,7 +299,7 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="REST_Assure_Get_Call.validate_response_body (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="REST_Assure_Get_Call.getResponseBody" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssureTesting" />
       <extension name="coverage">
         <pattern>
@@ -313,7 +309,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.test" />
       <option name="MAIN_CLASS_NAME" value="com.qa.test.REST_Assure_Get_Call" />
-      <option name="METHOD_NAME" value="validate_response_body" />
+      <option name="METHOD_NAME" value="getResponseBody" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -396,18 +392,18 @@
     <list>
       <item itemvalue="Maven.Run Maven" />
       <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body" />
-      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body (3)" />
       <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body (4)" />
       <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject" />
       <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" />
+      <item itemvalue="TestNG.REST_Assure_Get_Call.getResponseBody" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" />
+        <item itemvalue="TestNG.REST_Assure_Get_Call.getResponseBody" />
         <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject" />
+        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" />
         <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body (4)" />
         <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body" />
-        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -517,15 +513,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="REST_Assure_Get_Call_validate_response_body - 2019.03.19 at 13h 51m 19s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="REST_Assure_Get_Call_getResponseBody - 2019.03.19 at 13h 52m 00s.xml">
-      <configuration name="REST_Assure_Get_Call.getResponseBody" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="REST_Assure_Get_Call_validate_response_body - 2019.03.19 at 13h 52m 35s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="REST_Assure_Get_Call_validate_response_body - 2019.03.19 at 13h 53m 29s.xml">
       <configuration name="REST_Assure_Get_Call.validate_response_body" configurationId="TestNG" />
     </history-entry>
@@ -546,6 +533,15 @@
     </history-entry>
     <history-entry file="REST_Assure_Get_Call_validate_response_body_using_jsonobject_(1) - 2019.03.19 at 14h 19m 19s.xml">
       <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_response_body_using_jsonobject - 2019.03.19 at 14h 29m 25s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_response_body_using_jsonobject - 2019.03.19 at 14h 30m 06s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_getResponseBody - 2019.03.19 at 14h 31m 49s.xml">
+      <configuration name="REST_Assure_Get_Call.getResponseBody" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -661,7 +657,8 @@
     <MESSAGE value="Deleted unused packages" />
     <MESSAGE value="Added testng.xml file&#10;Updated pom.xml file with Surefile-Plugin - dependency and plugin" />
     <MESSAGE value="Updated jenkinsfile with parameters, environment and post actions like 'failure' and 'unstable'." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated jenkinsfile with parameters, environment and post actions like 'failure' and 'unstable'." />
+    <MESSAGE value="Updated POM.xml file for JSONObject parsing&#10;Added Utility method to read JSONObject and parse data&#10;Added one new test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated POM.xml file for JSONObject parsing&#10;Added Utility method to read JSONObject and parse data&#10;Added one new test case" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -806,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+        <state relative-caret-position="425">
+          <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

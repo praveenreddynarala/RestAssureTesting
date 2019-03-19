@@ -81,8 +81,9 @@ public class REST_Assure_Get_Call {
     @Test
     public void validate_response_body_using_jsonobject(){
         JSONObject jObj = RestAssureClientCall.getInstance().getRESTAssureResponse(sURL, sCityName).body().as(JSONObject.class);
-        String sTemp = Util.getValueByJPath(jObj, "/Temperature");
-        Assert.assertTrue(sTemp.equalsIgnoreCase("35.65 Degree celsius"), "Strings are not equal");
+        String sTemp = Util.getValueByJPath(jObj, "/City");
+        System.out.println(sTemp);
+        Assert.assertTrue(sTemp.equalsIgnoreCase("35.85 Degree celsius"), "City doesn't exist");
     }
 
 }
