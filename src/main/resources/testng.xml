@@ -5,6 +5,7 @@
     <test name="REST_Assure_Get_Call">
         <classes>
             <class name="com.qa.test.REST_Assure_Get_Call" />
+            <class name="com.qa.test.REST_Assure_Post_Call" />
         </classes>
     </test>
 
