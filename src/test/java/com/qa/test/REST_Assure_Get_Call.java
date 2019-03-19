@@ -12,6 +12,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+
 public class REST_Assure_Get_Call {
 
     private String sURL;
@@ -84,6 +86,18 @@ public class REST_Assure_Get_Call {
         String sTemp = Util.getValueByJPath(jObj, "/City");
         System.out.println(sTemp);
         Assert.assertTrue(sTemp.equalsIgnoreCase("35.85 Degree celsius"), "City doesn't exist");
+    }
+
+    @Test
+    public void validate_get_API_With_Headers(){
+        HashMap<String, String> headerMap = new HashMap<>();
+        headerMap.put("Content-Type", "application/json");
+        headerMap.put("Connection", "keep-alive");
+        headerMap.put("Server", "nginx");
+
+        String responseBody = RestAssureClientCall.getInstance().getRESTAssureResponseUsingHeaders(sURL, sCityName, headerMap).body().asString();
+        System.out.println(responseBody);
+
     }
 
 }

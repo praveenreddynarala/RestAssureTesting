@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d77febe-f48a-4e31-9034-3147522edcab" name="Default Changelist" comment="Updated POM.xml file for JSONObject parsing&#10;Added Utility method to read JSONObject and parse data&#10;Added one new test case">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+            <state relative-caret-position="396">
+              <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,11 +32,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="208">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.3.0/rest-assured-3.3.0-sources.jar!/io/restassured/RestAssured.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="710" selection-start-line="710" selection-end-line="710" />
+              <folding>
+                <element signature="e#28212#28213#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.3.0/rest-assured-3.3.0-sources.jar!/io/restassured/specification/RequestSpecification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1357">
+              <caret line="1411" column="47" lean-forward="true" selection-start-line="1411" selection-start-column="47" selection-end-line="1411" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -90,13 +113,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/testbase/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/TestUtils/Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java" />
       </list>
     </option>
@@ -224,7 +247,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552986143426" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552989965075" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RestAssureAPITest" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -243,7 +266,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.REST_Assure_Get_Call.getResponseBody">
+  <component name="RunManager" selected="TestNG.REST_Assure_Get_Call.validate_get_API_With_Headers (1)">
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-11.0.2" />
@@ -317,7 +340,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="REST_Assure_Get_Call.validate_response_body (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="REST_Assure_Get_Call.validate_get_API_With_Headers (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssureTesting" />
       <extension name="coverage">
         <pattern>
@@ -327,7 +350,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.test" />
       <option name="MAIN_CLASS_NAME" value="com.qa.test.REST_Assure_Get_Call" />
-      <option name="METHOD_NAME" value="validate_response_body" />
+      <option name="METHOD_NAME" value="validate_get_API_With_Headers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -335,7 +358,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="REST_Assure_Get_Call.validate_response_body" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="REST_Assure_Get_Call.validate_get_API_With_Headers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssureTesting" />
       <extension name="coverage">
         <pattern>
@@ -345,7 +368,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.test" />
       <option name="MAIN_CLASS_NAME" value="com.qa.test.REST_Assure_Get_Call" />
-      <option name="METHOD_NAME" value="validate_response_body" />
+      <option name="METHOD_NAME" value="validate_get_API_With_Headers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -353,7 +376,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="REST_Assure_Get_Call.validate_get_all_headers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssureTesting" />
       <extension name="coverage">
         <pattern>
@@ -363,7 +386,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.test" />
       <option name="MAIN_CLASS_NAME" value="com.qa.test.REST_Assure_Get_Call" />
-      <option name="METHOD_NAME" value="validate_response_body_using_jsonobject" />
+      <option name="METHOD_NAME" value="validate_get_all_headers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -371,7 +394,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssureTesting" />
       <extension name="coverage">
         <pattern>
@@ -391,19 +414,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Run Maven" />
-      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body" />
-      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body (4)" />
-      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject" />
-      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" />
       <item itemvalue="TestNG.REST_Assure_Get_Call.getResponseBody" />
+      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (2)" />
+      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_get_API_With_Headers" />
+      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_get_all_headers" />
+      <item itemvalue="TestNG.REST_Assure_Get_Call.validate_get_API_With_Headers (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_get_API_With_Headers (1)" />
+        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_get_API_With_Headers" />
+        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_get_all_headers" />
+        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (2)" />
         <item itemvalue="TestNG.REST_Assure_Get_Call.getResponseBody" />
-        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject" />
-        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" />
-        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body (4)" />
-        <item itemvalue="TestNG.REST_Assure_Get_Call.validate_response_body" />
       </list>
     </recent_temporary>
   </component>
@@ -513,24 +536,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="REST_Assure_Get_Call_validate_response_body - 2019.03.19 at 13h 53m 29s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="REST_Assure_Get_Call_validate_response_body_(3) - 2019.03.19 at 13h 53m 52s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body (3)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="REST_Assure_Get_Call_validate_response_body - 2019.03.19 at 13h 55m 29s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="REST_Assure_Get_Call_validate_response_body - 2019.03.19 at 13h 57m 01s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="REST_Assure_Get_Call_validate_response_body_(4) - 2019.03.19 at 14h 10m 11s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body (4)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="REST_Assure_Get_Call_validate_response_body_using_jsonobject - 2019.03.19 at 14h 17m 46s.xml">
-      <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="REST_Assure_Get_Call_validate_response_body_using_jsonobject_(1) - 2019.03.19 at 14h 19m 19s.xml">
       <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject (1)" configurationId="TestNG" />
     </history-entry>
@@ -542,6 +547,24 @@
     </history-entry>
     <history-entry file="REST_Assure_Get_Call_getResponseBody - 2019.03.19 at 14h 31m 49s.xml">
       <configuration name="REST_Assure_Get_Call.getResponseBody" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_response_body_using_jsonobject_(2) - 2019.03.19 at 14h 36m 38s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_response_body_using_jsonobject (2)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_get_API_With_Headers - 2019.03.19 at 15h 25m 35s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_get_API_With_Headers" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_get_all_headers - 2019.03.19 at 15h 26m 32s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_get_all_headers" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_get_API_With_Headers - 2019.03.19 at 15h 28m 03s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_get_API_With_Headers" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_get_API_With_Headers - 2019.03.19 at 15h 30m 26s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_get_API_With_Headers" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="REST_Assure_Get_Call_validate_get_API_With_Headers_(1) - 2019.03.19 at 15h 31m 05s.xml">
+      <configuration name="REST_Assure_Get_Call.validate_get_API_With_Headers (1)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -557,7 +580,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61702126" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.80032736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -693,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.3.0/rest-assured-3.3.0-sources.jar!/io/restassured/RestAssured.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5372">
-          <caret line="360" column="32" selection-start-line="360" selection-start-column="25" selection-end-line="360" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../FirstHttpClientAPI/FirstRestAssureAPI/src/main/java/com/qa/testbase/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -756,16 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.3/json-smart-2.3.jar!/net/minidev/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -801,10 +807,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.3.0/rest-assured-3.3.0-sources.jar!/io/restassured/specification/RequestSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="1411" column="47" lean-forward="true" selection-start-line="1411" selection-start-column="47" selection-end-line="1411" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.3.0/rest-assured-3.3.0-sources.jar!/io/restassured/RestAssured.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="710" selection-start-line="710" selection-end-line="710" />
+          <folding>
+            <element signature="e#28212#28213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/REST_Assure_Get_Call.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+        <state relative-caret-position="396">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
