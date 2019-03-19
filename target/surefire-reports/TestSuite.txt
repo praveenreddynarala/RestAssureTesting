@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.085 s <<< FAILURE! - in TestSuite
+validate_response_headers_using_lamda_expression(com.qa.test.REST_Assure_Get_Call)  Time elapsed: 0.607 s  <<< FAILURE!
+java.lang.AssertionError: Header doesn't exists expected [true] but found [false]
+	at com.qa.test.REST_Assure_Get_Call.lambda$validate_response_headers_using_lamda_expression$1(REST_Assure_Get_Call.java:73)
+	at com.qa.test.REST_Assure_Get_Call.validate_response_headers_using_lamda_expression(REST_Assure_Get_Call.java:71)
+

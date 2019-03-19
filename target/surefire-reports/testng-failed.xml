@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssureTest]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="REST_Assure_Get_Call(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.test.REST_Assure_Get_Call">
+        <methods>
+          <include name="validate_response_headers_using_lamda_expression"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.test.REST_Assure_Get_Call -->
+    </classes>
+  </test> <!-- REST_Assure_Get_Call(failed) -->
+</suite> <!-- Failed suite [RestAssureTest] -->

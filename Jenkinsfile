@@ -12,14 +12,14 @@ pipeline{
     }
 
     parameters{
-        string(name: 'USER', defaultValue: 'Praveen Reddy', description: 'Example parameter initialization')
+        string(name: 'PERSON', defaultValue: 'Mr Praveen', description: 'Example parameter initialization')
     }
 
     stages { // Stages Start
 
         stage('Compile Stage') {
             steps {
-                echo "Compile Stage. It is been run by user - ${USER}."
+                echo "Compile Stage. It is been run by user - ${params.PERSON}"
                 withMaven(maven: 'maven_3_6_0') {
                     bat 'mvn clean compile'
                 }
