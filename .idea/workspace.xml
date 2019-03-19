@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d77febe-f48a-4e31-9034-3147522edcab" name="Default Changelist" comment="Updated POM.xml file for JSONObject parsing&#10;Added Utility method to read JSONObject and parse data&#10;Added one new test case">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
+    <list default="true" id="8d77febe-f48a-4e31-9034-3147522edcab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/restassureclient/RestAssureClientCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+            <state relative-caret-position="187">
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -271,7 +267,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553020518833" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553020548179" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RestAssureAPITest" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -556,7 +552,35 @@
       <option name="project" value="LOCAL" />
       <updated>1552974578374</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Updated config.properties file&#10;Created post call test case&#10;Added post call class to TestNG">
+      <created>1553020406641</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1553020406641</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updated config.properties file&#10;Created post call test case&#10;Added post call class to TestNG">
+      <created>1553020442863</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1553020442863</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated config.properties file&#10;Created post call test case&#10;Added post call class to TestNG">
+      <created>1553020472346</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1553020472346</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updated config.properties file&#10;Created post call test case&#10;Added post call class to TestNG">
+      <created>1553020532094</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1553020532094</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -593,9 +617,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -611,7 +634,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49848714" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50226927" side_tool="true" weight="0.6710311" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4977307" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4977307" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4977307" weight="0.6710311" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -705,7 +728,8 @@
     <MESSAGE value="Added testng.xml file&#10;Updated pom.xml file with Surefile-Plugin - dependency and plugin" />
     <MESSAGE value="Updated jenkinsfile with parameters, environment and post actions like 'failure' and 'unstable'." />
     <MESSAGE value="Updated POM.xml file for JSONObject parsing&#10;Added Utility method to read JSONObject and parse data&#10;Added one new test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated POM.xml file for JSONObject parsing&#10;Added Utility method to read JSONObject and parse data&#10;Added one new test case" />
+    <MESSAGE value="Updated config.properties file&#10;Created post call test case&#10;Added post call class to TestNG" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated config.properties file&#10;Created post call test case&#10;Added post call class to TestNG" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -893,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
