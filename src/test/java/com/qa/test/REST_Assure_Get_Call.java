@@ -1,9 +1,13 @@
 package com.qa.test;
 
+import com.qa.TestUtils.Util;
 import com.qa.restassureclient.RestAssureClientCall;
 import com.qa.testbase.TestBase;
 import io.restassured.http.Headers;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.ResponseBody;
+import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -72,6 +76,13 @@ public class REST_Assure_Get_Call {
             if (k.getName().equals("Server"))
                 Assert.assertTrue(k.getValue().equals("application/json"), "Header doesn't exists");
         });
+    }
+
+    @Test
+    public void validate_response_body_using_jsonobject(){
+        JSONObject jObj = RestAssureClientCall.getInstance().getRESTAssureResponse(sURL, sCityName).body().as(JSONObject.class);
+        String sTemp = Util.getValueByJPath(jObj, "/Temperature");
+        Assert.assertTrue(sTemp.equalsIgnoreCase("35.65 Degree celsius"), "Strings are not equal");
     }
 
 }

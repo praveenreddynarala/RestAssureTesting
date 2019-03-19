@@ -1,17 +1,24 @@
 package com.qa.TestUtils;
 
+import groovy.json.JsonException;
+import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+
 public class Util {
 
-    private static Util uObj = null;
-
-    private Util(){
-
-    }
-
-    public static Util getInstance(){
-        if (uObj == null)
-            uObj = new Util();
-        return uObj;
+    public static String getValueByJPath(JSONObject responsejson, String jpath){
+        Object obj = responsejson;
+        try {
+            for(String s : jpath.split("/"))
+                if(!s.isEmpty())
+                    if(!(s.contains("[") || s.contains("]")))
+                        obj = ((JSONObject) obj).get(s);
+                    else if(s.contains("[") || s.contains("]"))
+                        obj = ((JSONArray) ((JSONObject) obj).get(s.split("\\[")[0])).get(Integer.parseInt(s.split("\\[")[1].replace("]", "")));
+        }catch (JsonException e) {
+            e.printStackTrace();
+        }
+        return obj.toString();
     }
 
 }
