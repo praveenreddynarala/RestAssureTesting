@@ -11,6 +11,12 @@ pipeline{
         pollSCM('H */4 * * 1-5')
     }
 
+    options{
+        buildDiscarder(
+                logRotator(daysToKeepStr: '2', numToKeepStr: '2', artifactNumToKeepStr: "2", artifactDaysToKeepStr: "2")
+        )
+    }
+
     parameters{
         string(name: 'PERSON', defaultValue: 'Mr Praveen', description: 'Example parameter initialization')
     }
